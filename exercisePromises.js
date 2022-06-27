@@ -13,6 +13,11 @@ promise.then(console.log)
 // or
 promise.then(resp => console.log(resp))
 // #3) Read about Promise.resolve() and Promise.reject(). How can you make
+const promis = Promise.resolve(
+  setTimeout(() => {
+    console.log("success");
+  }, 4000)
+);
 // the above promise shorter with Promise.resolve() and console loggin "success"
 
 
